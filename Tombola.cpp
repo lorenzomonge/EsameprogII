@@ -15,23 +15,23 @@ class Tessera
     int numero;
     bool finestrella[5];
     int scheda[5];
-    
+
 
     public:
 
     Tessera(string N){
         nome=N;
-       // numero=n; 
+       // numero=n;
     }
-    
+
 
     bool nuova()
-    {   
+    {
         //inizializzo le finestre tutte come aperte
         for(int i=0;i<5;i++)
         {
             finestrella[i]=true;
-            
+
         }
             //cout<<"ora tutte le finestrelle sono aperte!!"<< endl;
     }
@@ -66,9 +66,9 @@ class Tessera
         }
     }
 
-    
 
-    
+
+
 
 
     void stampa()
@@ -79,21 +79,21 @@ class Tessera
 
         for(int i=0;i<5;i++)
         {
-            
+
             if(!finestrella[i])
             {
               ss<<"##";
               ss>>a;
-              
-               
+
+
             }
             else
             {
-                
+
                 ss<<numero;
                 ss>>b;
             }
-            
+
         }
 
         cout<<nome<<":"<<a<<b;
@@ -103,7 +103,7 @@ class Tessera
 
 
 int main()
-{    
+{
 
     Tessera t("Mario");
 
@@ -111,9 +111,8 @@ int main()
     t.controlla(100);
     t.stampa();
 
+     //sto commentando da git
 
-
+    //ciao sono un hacker
 
 }
-
-
