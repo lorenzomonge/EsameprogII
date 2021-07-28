@@ -111,7 +111,7 @@ int main()
     t.controlla(100);
     t.stampa();
 
-     //sto commentando da git
+     //sto commentando da atom ciao
 
     //ciao sono un hacker
 
