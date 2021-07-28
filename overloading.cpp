@@ -39,7 +39,7 @@ class Oratore: public Persona {
         Persona::parla();
         cout <<"sono l'oratore "<<nome<<"e sto proclamando un discorsos"<< endl;
     }
-    
+
 };
 
 
@@ -57,6 +57,7 @@ int main(){
     Oratore o1("Cicerone", 2000);
     o1.print();
     o1.parla();
-    
+
+    //ciao sto riprovando il commit da atom
 
 }
