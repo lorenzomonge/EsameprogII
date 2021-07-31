@@ -43,46 +43,7 @@ class Studenti
     double getMedia() {return media;}
 };
 
-  //lista
 
-  class NodeDL
-  {
-  private:
-
-      NodeDL* next;
-      NodeDL* prev;
-      Studenti valore;
-
-  public:
-
-      NodeDL(Studenti valore, NodeDL *prev, NodeDL* next) : valore(valore),
-        prev(prev),   next(next)  {}
-
-      NodeDL(Studenti valore) :  NodeDL(valore, NULL, NULL) {}
-      NodeDL() : NodeDL(0, NULL, NULL) {}
-
-      void setValude( Studenti valore) {this->valore = valore;}
-      void setPrev(NodeDL *prev) {this->prev = prev;}
-      void setNext(NodeDL *next) {this->next =next; }
-
-      int getValue() const {return valore; }
-      NodeDL *getPrev() const {return prev; }
-      NodeDL *getNext() const {return next; }
-
-      string toString() const
-      {
-        stringstream stream;
-        stream << "valore NodeDl = " << valore << ", prev =" << prev << ",next ="<< next;
-        return stream.str();
-      }
-
-      friend ostream& operator <<(ostream& out, const NodeDL& n)
-      {
-        out << n.toString();
-        return out;
-      }
-
-  };
 
   class Lista
   {
